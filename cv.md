@@ -38,3 +38,28 @@ skills in programming, learn React. In the future, I'd like to become a frontend
 * Gulp
 
 *********
+## Code example
+
+
+**What day of the month was many days ago:** *create a function* ***getDateAgo(date, days)*** *that returns a number that*
+ *was* ***days***  *days ago from date* ***date*** 
+
+
+ ```
+ function getDateAgo(date, days) {
+     let dateCopy = new Date(date);
+     dateCopy.setDate(date.getDate() - days);
+     return dateCopy.getDate();
+ }
+
+ ```
+
+ *********
+## Work examples
+
+
+ 1. [Web-site for Mary Losewa](https://vadimhmys.github.io/MaryLosewa.github.io/) 
+ 2. [Restaurant](https://vadimhmys.github.io/restaurant/)
+
+
+ ********
