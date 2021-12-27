@@ -63,3 +63,17 @@ skills in programming, learn React. In the future, I'd like to become a frontend
 
 
  ********
+ ## Courses
+
+
+ * Website development with HTML, CSS & JavaScript (IT-Academy)
+
+
+ ![photo of the certificate](images/Certificate.jpg)
+
+
+ * JavaScript Manual on [learn.javascript.ru](https://learn.javascript.ru)
+ * RS Schools Course
+
+
+ ********
