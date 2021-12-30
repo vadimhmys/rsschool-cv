@@ -142,7 +142,12 @@ body {
     padding-top: 15px;
 }
 
-
+.education-content {
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+}
 
 
 
