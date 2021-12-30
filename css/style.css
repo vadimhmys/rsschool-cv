@@ -121,3 +121,28 @@ body {
     border-top: 2px solid var(--main-color);
     padding: 40px 0;
 }
+
+.section {
+    padding: 30px 15px;
+}
+
+.section-title {
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.summary-content {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+.summary-content + .summary-content {
+    padding-top: 15px;
+}
+
+
+
+
+
