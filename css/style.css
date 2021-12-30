@@ -156,25 +156,31 @@ body {
     font-style: italic;
 }
 
-/******courses*******/
+/******courses and projects*******/
 
-.courses-item {
+.courses-item,
+.projects-item {
     list-style-type: square;
     list-style-position: inside;
 }
 
-.courses-item + .courses-item {
+.courses-item + .courses-item,
+.projects-item + .projects-item {
     padding-top: 10px;
 }
 
-.courses-link {
+.courses-link,
+.projects-link {
     text-decoration: underline;
     font-style: italic;
 }
 
-.courses-link:hover {
+.courses-link:hover,
+.projects-link:hover {
     color: #000;
 }
+
+/******code*********/
 
 pre {
     white-space: pre-wrap;
