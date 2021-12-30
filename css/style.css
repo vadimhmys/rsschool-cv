@@ -175,3 +175,10 @@ body {
 .courses-link:hover {
     color: #000;
 }
+
+pre {
+    white-space: pre-wrap;
+    margin: 0;
+    padding: 0 15px;
+    background-color: rgba(37,49,70,.2);;
+}
