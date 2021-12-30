@@ -52,11 +52,15 @@ body {
 }
 
 .container {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .header {
     background-color: var(--main-color);
+}
+
+.nav {
+    padding: 20px 0;
 }
 
 .nav-list {
@@ -79,5 +83,41 @@ body {
     transition: border-bottom-color .2s, transform .2s;
 }
 
+.info {
+    border: 1px solid black;
+    display: flex;
+}
+.info-detailed {
+    border: 1px solid red;
+    flex: 4;
+    padding: 0 30px;
+    
+}
+.info-short {
+    border: 1px solid green;
+    flex: 3;
+    padding: 0 30px;
+}
 
+.fullname {
+    margin: 0 auto;
+    padding: 70px 0 50px;
+    font-weight: bold;
+    font-size: 76px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+}
 
+.subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle-inner {
+    font-style: italic;
+    font-size: 32px;
+    text-transform: uppercase;
+    border-top: 2px solid var(--main-color);
+    padding: 40px 0;
+}
