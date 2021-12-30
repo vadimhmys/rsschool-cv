@@ -6,7 +6,6 @@
 a{
     text-decoration: none;
     display: inline-block;
-    color:#000;
 }
 
 h1,
@@ -29,7 +28,7 @@ li{
     list-style: none;
 }
 
-/**************/
+/******common*****/
 
 html {
     background-color: #fff;
@@ -54,6 +53,35 @@ body {
 .container {
     padding: 0 20px;
 }
+
+.info {
+    border: 1px solid black;
+    display: flex;
+}
+.info-detailed {
+    border: 1px solid red;
+    flex: 4;
+    padding: 0 30px;
+    
+}
+.info-short {
+    border: 1px solid green;
+    flex: 3;
+    padding: 0 30px;
+}
+
+.section {
+    padding: 30px 15px;
+}
+
+.section-title {
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+/*****header*******/
 
 .header {
     background-color: var(--main-color);
@@ -83,21 +111,7 @@ body {
     transition: border-bottom-color .2s, transform .2s;
 }
 
-.info {
-    border: 1px solid black;
-    display: flex;
-}
-.info-detailed {
-    border: 1px solid red;
-    flex: 4;
-    padding: 0 30px;
-    
-}
-.info-short {
-    border: 1px solid green;
-    flex: 3;
-    padding: 0 30px;
-}
+/*****title********/
 
 .fullname {
     margin: 0 auto;
@@ -122,16 +136,7 @@ body {
     padding: 40px 0;
 }
 
-.section {
-    padding: 30px 15px;
-}
-
-.section-title {
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    padding-bottom: 30px;
-}
+/****summary*******/
 
 .summary-content {
     text-align: justify;
@@ -142,6 +147,8 @@ body {
     padding-top: 15px;
 }
 
+/*****education******/
+
 .education-content {
     padding-bottom: 15px;
     font-size: 24px;
@@ -149,5 +156,22 @@ body {
     font-style: italic;
 }
 
+/******courses*******/
 
+.courses-item {
+    list-style-type: square;
+    list-style-position: inside;
+}
 
+.courses-item + .courses-item {
+    padding-top: 10px;
+}
+
+.courses-link {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.courses-link:hover {
+    color: #000;
+}
