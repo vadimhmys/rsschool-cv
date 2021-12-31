@@ -85,6 +85,10 @@ body {
     border-bottom: 2px solid var(--fortext-color);
 } 
 
+.info-short .section:last-of-type {
+    border-bottom-width: 0;
+} 
+
 /*****header*******/
 
 .header {
@@ -160,7 +164,7 @@ body {
     font-style: italic;
 }
 
-/******common courses, projects, skills, language*******/
+/******common courses, projects, skills, language, contacts*******/
 
 .courses-item,
 .projects-item,
@@ -173,7 +177,8 @@ body {
 .courses-item + .courses-item,
 .projects-item + .projects-item,
 .skills-item + .skills-item,
-.language-item + .language-item {
+.language-item + .language-item,
+.contacts-item + .contacts-item {
     padding-top: 10px;
 }
 
@@ -197,3 +202,18 @@ pre {
     background-color: rgba(37,49,70,.2);;
 }
 
+/*******contacts********/
+
+.contacts-item span {
+    font-weight: bold;
+}
+
+.contacts-link {
+    color: var(--fortext-color);
+    font-style: italic;
+    text-decoration: underline;
+} 
+
+.contacts-link:hover {
+    color: #000;
+}
