@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <meta itemprop="headline" content="CV">
+        <meta itemprop="description" content="CV Vadim Hmys">
+        <meta itemprop="keywords" content="CV?Vadim Hmys,frontend,rsschool">
+        <div class="container">
+            <nav class="nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <div class="header-burger">
+                    <div class="header-burger-open-wrapper"  id="opened">
+                        <div class="header-burger-open"></div>
+                    </div>
+                    <div class="header-burger-close" id="closed"></div>
+                    <ul class="nav-burger-list" id="burger-list">
+                        <li class="nav-item"><a itemprop="url" href="#contacts" class="nav-link" >Contacts</a></li>
+                        <li class="nav-item"><a itemprop="url" href="#summary" class="nav-link" >Summary</a></li>
+                        <li class="nav-item"><a itemprop="url" href="#skills" class="nav-link" >Skills</a></li>
+                        <li class="nav-item"><a itemprop="url" href="#code" class="nav-link" >Code</a></li>
+                        <li class="nav-item"><a itemprop="url" href="#projects" class="nav-link" >Projects</a></li>
+                        <li class="nav-item"><a itemprop="url" href="#courses" class="nav-link" >Courses</a></li>
+                        <li class="nav-item"><a itemprop="url" href="#education" class="nav-link">Education</a></li>
+                        <li class="nav-item"><a itemprop="url" href="#language" class="nav-link" >Language</a></li>
+                      </ul>
+                </div> 
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="info">
+                <div class="info-detailed" itemscope itemtype="http://schema.org/Person">
+                    <h1 class="fullname"><span itemprop="name">Vadim Hmys</span></h1>
+                    <div class="myphoto">
+                        <div class="wrapper-photo"></div>
+                    </div>
+                    <div class="subtitle">
+                        <div class="subtitle-inner"><span itemprop="jobTitle">frontend developer</span></div>
+                    </div>
+                    <section class="section" id="summary">
+                        <h2 class="section-title">About myself</h2>
+                        <p class="summary-content">
+                            My way in programming began with C++. I was writing small programs for microcontrollers. 
+                            It was my hobby. But soon I gave up this activity, because radio components are expensive by
+                            us and it takes a long time to wait for them from China.
+                        </p>
+                        <p class="summary-content">
+                            I decided to try something else and started learning JavaScript to be able to create websites.
+                            I like the fact that I can immediately see the result of my work.
+                        </p>
+                        <p class="summary-content">
+                            Today I know HTML, CSS and basic JS quite well. I want to improve and expand my knowledge of JS,
+                            get practical skills in programming, learn React. In the future, I'd like to become a frontend developer.
+                        </p>
+                    </section>
+                    <section class="section" id="education">
+                        <h2 class="section-title">education</h2>
+                        <p class="education-content">
+                            Telecommunications engineer 
+                        </p>
+                        <p class="education-experience">
+                            Work experience: 2012 - 2021
+                        </p>
+                    </section>
+                    <section class="section" id="courses">
+                        <h2 class="section-title">courses</h2>
+                        <ul class="courses-list">
+                            <li class="courses-item">Website development with HTML, CSS & JavaScript (IT-Academy) 
+                                <a class="courses-link" href="assets/img/Certificate.jpg" target="_blank">certificate</a>
+                            </li>
+                            <li class="courses-item">JavaScript Manual on 
+                                <a class="courses-link" href="https://learn.javascript.ru" target="_blank">learn.javascript.ru</a>
+                            </li>
+                            <li class="courses-item">RS Schools Course</li>
+                        </ul>
+                    </section>
+                    <section class="section" id="code">
+                        <h2 class="section-title">Code example</h2>
+                        <pre>
+                            <code>
+function getDateAgo(date, days) {
+    let dateCopy = new Date(date);
+    dateCopy.setDate(date.getDate() - days);
+    return dateCopy.getDate();
+}
+                            </code>
+                        </pre>
+                    </section>
+                </div>
+                <div class="info-short" itemscope itemtype="http://schema.org/Person">
+                    <div class="myphoto">
+                        <div class="wrapper-photo"></div>
+                    </div>
+                    <section class="section" id="skills">
+                        <h2 class="section-title">Skills and Proficiency</h2>
+                        <ul class="skills-list">
+                            <li class="skills-item">HTML5, CSS3</li>
+                            <li class="skills-item">Basic JavaScript</li>
+                            <li class="skills-item">Git</li>
+                            <li class="skills-item">VS Code, Brackets</li>
+                            <li class="skills-item">Adobe Photoshop, Figma</li>
+                            <li class="skills-item">Gulp</li>
+                        </ul>
+                    </section>
+                    <section class="section" id="language">
+                        <h2 class="section-title">Language</h2>
+                        <ul class="language-list">
+                            <li class="language-item">Belarusian (native)</li>
+                            <li class="language-item">Russian (native)</li>
+                            <li class="language-item">English (A1)</li>
+                        </ul>
+                    </section>
+                    <section class="section" id="projects">
+                        <h2 class="section-title">Work examples</h2>
+                        <ul class="projects-list">
+                            <li class="projects-item"> 
+                                <a class="projects-link" href="https://vadimhmys.github.io/MaryLosewa.github.io/" target="_blank">Mary Losewa</a>
+                            </li>
+                            <li class="projects-item">
+                                <a class="projects-link" href="https://vadimhmys.github.io/restaurant/" target="_blank">Restaurant</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="section" id="contacts">
+                        <h2 class="section-title">Contact information</h2>
+                        <ul class="contacts-list">
+                            <li class="contacts-item">
+                                <span>Phone: </span> 
+                                <a class="contacts-link" href="tel:+375291086014" itemprop="telephone">+375 29 1086014</a>
+                            </li>
+                            <li class="contacts-item">
+                                <span>Email:</span>
+                                <a class="contacts-link" href="mailto:vadim-hmys@yandex.ru" itemprop="email">   vadim-hmys@yandex.ru</a>
+                            </li>
+                            <li class="contacts-item">
+                                <span>Discord:</span>   Vadim Hmys (@vadimhmys)
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <a class="footer-github" href="https://github.com/vadimhmys" target="_blank">Visit my GitHub</a>
+                <span>&copy; 2022</span>
+                <a class="footer-logo" href="https://rs.school/js/" target="_blank"><img src="assets/img/rs_school_js.svg" alt="Logo RSSchool" width="70" height="30"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
