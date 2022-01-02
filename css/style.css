@@ -1,0 +1,389 @@
+/*******reset*******/
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/******common*****/
+
+html {
+    background-color: #fff;
+}
+
+html:root {
+    --main-color: rgb(37,49,70);
+    --fortext-color: rgb(232,232,228);
+  }
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(../assets/img/main_bg.jpg);
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    color: var(--main-color);
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.info {
+    display: flex;
+}
+
+.info-detailed {
+    flex: 4;
+    padding: 0 30px;
+}
+.info-detailed a,
+.info-detailed a:visited {
+    color: var(--main-color);
+}
+
+.info-detailed a:hover {
+    color: #000;
+}
+
+.info-detailed .myphoto {
+    display: none;
+}
+
+.info-short {
+    flex: 3;
+    padding: 0 30px;
+    background-color: var(--main-color);
+    color: var(--fortext-color);
+}
+.info-short a,
+.info-short a:visited {
+    color: var(--fortext-color);
+}
+
+.info-short a:hover {
+    color: #000;
+}
+
+.section {
+    padding: 30px 15px;
+}
+
+.section-title {
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.info-short .section {
+    border-bottom: 2px solid var(--fortext-color);
+} 
+
+.info-short .section:last-of-type {
+    border-bottom-width: 0;
+} 
+
+/*******myphoto******/
+
+.myphoto {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.wrapper-photo {
+    width: 240px;
+    height: 240px;
+    background-image: url(../assets/img/my_photo.jpg);
+    background-position: 0 -2px;
+    border-radius: 50%;
+    border: 10px solid var(--fortext-color);
+}
+
+/*****header*******/
+
+.header {
+    position: relative;
+}
+
+.nav {
+    padding: 20px 0;
+    background-color: var(--main-color);
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 1.4;
+    font-weight: bold;
+    color: var(--fortext-color);
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom-color: var(--fortext-color);
+    transform: scale(1.1);
+    transition: border-bottom-color .2s, transform .2s;
+}
+
+.header-burger {
+    width: 35px;
+    height: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.header-burger-open-wrapper {
+    width: 35px;
+    height: 25px;
+}
+
+.header-burger-open {
+    width: 35px;
+    height: 3px;
+    background-color: var(--fortext-color);
+    box-shadow: 0 8px var(--fortext-color), 0 16px var(--fortext-color);
+}
+
+.header-burger-close {
+    width: 35px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+
+.header-burger-close::before,
+.header-burger-close::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: var(--fortext-color);
+    position: absolute;
+    top: 40%;
+}
+
+.header-burger-close::before {
+    transform: rotate(45deg);
+}
+
+.header-burger-close::after {
+    transform: rotate(-45deg);
+}
+
+.nav-burger-list {
+    background-color: var(--main-color);
+    min-width: 150px;
+    position: absolute;
+    left: 20px;
+    top: 65px;
+    display: none;
+}
+
+.nav-burger-list .nav-item {
+    padding-bottom: 10px;
+}
+
+/*****title********/
+
+.fullname {
+    margin: 0 auto;
+    padding: 70px 0 50px;
+    font-weight: bold;
+    font-size: 76px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle-inner {
+    font-style: italic;
+    font-size: 32px;
+    text-transform: uppercase;
+    border-top: 2px solid var(--main-color);
+    padding: 40px 0;
+}
+
+/****summary*******/
+
+.summary-content {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+.summary-content + .summary-content {
+    padding-top: 15px;
+}
+
+/*****education******/
+
+.education-content {
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/******common courses, projects, skills, language, contacts*******/
+
+.courses-item,
+.projects-item,
+.skills-item,
+.language-item {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.courses-item + .courses-item,
+.projects-item + .projects-item,
+.skills-item + .skills-item,
+.language-item + .language-item,
+.contacts-item + .contacts-item {
+    padding-top: 10px;
+}
+
+.courses-link,
+.projects-link {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/******code*********/
+
+pre {
+    white-space: pre-wrap;
+    margin: 0;
+    padding: 0 15px;
+    background-color: rgba(37,49,70,.2);;
+}
+
+/*******contacts********/
+
+.contacts-item span {
+    font-weight: bold;
+}
+
+.contacts-link {
+    color: var(--fortext-color);
+    font-style: italic;
+    text-decoration: underline;
+} 
+
+.contacts-link:hover {
+    color: #000;
+}
+
+/****footer*******/
+
+.footer-inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: var(--main-color);
+    color: var(--fortext-color);
+}
+
+.footer-github {
+    color: var(--fortext-color);
+    font-style: italic;
+}
+
+.footer-github:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+@media (max-width: 990px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .info-short .myphoto {
+        display: none;
+    }
+
+    .info-detailed .myphoto {
+        display:flex;
+    }
+
+    .wrapper-photo {
+        border: 10px solid var(--main-color);
+    }
+
+    .fullname {
+        padding-bottom: 0;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .header-burger {
+        display: block;
+    }
+}
+
+@media (max-width: 720px) {
+    .fullname {
+        padding-top: 50px;
+    }
+
+    .section {
+        padding: 20px 15px;
+    }
+    .section-title {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-detailed,
+    .info-short {
+        padding: 0 10px;
+    }
+}
