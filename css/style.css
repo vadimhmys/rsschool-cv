@@ -58,16 +58,37 @@ body {
 .info {
     display: flex;
 }
+
 .info-detailed {
     flex: 4;
     padding: 0 30px;
-    
 }
+
+.info-detailed a:visited {
+    color: var(--main-color);
+}
+
+.info-detailed a:hover {
+    color: #000;
+}
+
+.info-detailed .myphoto {
+    display: none;
+}
+
 .info-short {
     flex: 3;
     padding: 0 30px;
     background-color: var(--main-color);
     color: var(--fortext-color);
+}
+
+.info-short a:visited {
+    color: var(--fortext-color);
+}
+
+.info-short a:hover {
+    color: #000;
 }
 
 .section {
@@ -108,6 +129,10 @@ body {
 
 /*****header*******/
 
+.header {
+    position: relative;
+}
+
 .nav {
     padding: 20px 0;
     background-color: var(--main-color);
@@ -131,6 +156,66 @@ body {
     border-bottom-color: var(--fortext-color);
     transform: scale(1.1);
     transition: border-bottom-color .2s, transform .2s;
+}
+
+.header-burger {
+    width: 35px;
+    height: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.header-burger-open-wrapper {
+    width: 35px;
+    height: 25px;
+}
+
+.header-burger-open {
+    width: 35px;
+    height: 3px;
+    background-color: var(--fortext-color);
+    box-shadow: 0 8px var(--fortext-color), 0 16px var(--fortext-color);
+}
+
+.header-burger-close {
+    width: 35px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+
+.header-burger-close::before,
+.header-burger-close::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: var(--fortext-color);
+    position: absolute;
+    top: 40%;
+}
+
+.header-burger-close::before {
+    transform: rotate(45deg);
+}
+
+.header-burger-close::after {
+    transform: rotate(-45deg);
+}
+
+.nav-burger-list {
+    background-color: var(--main-color);
+    min-width: 150px;
+    position: absolute;
+    left: 20px;
+    top: 65px;
+    display: none;
+}
+
+.nav-burger-list .nav-item {
+    padding-bottom: 10px;
 }
 
 /*****title********/
@@ -202,11 +287,6 @@ body {
     font-style: italic;
 }
 
-.courses-link:hover,
-.projects-link:hover {
-    color: #000;
-}
-
 /******code*********/
 
 pre {
@@ -250,4 +330,60 @@ pre {
 .footer-github:hover {
     text-decoration: underline;
     color: #000;
+}
+
+@media (max-width: 990px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .info-short .myphoto {
+        display: none;
+    }
+
+    .info-detailed .myphoto {
+        display:flex;
+    }
+
+    .wrapper-photo {
+        border: 10px solid var(--main-color);
+    }
+
+    .fullname {
+        padding-bottom: 0;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .header-burger {
+        display: block;
+    }
+}
+
+@media (max-width: 720px) {
+    .fullname {
+        padding-top: 50px;
+    }
+
+    .section {
+        padding: 20px 15px;
+    }
+    .section-title {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-detailed,
+    .info-short {
+        padding: 0 10px;
+    }
 }

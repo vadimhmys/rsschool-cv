@@ -16,6 +16,22 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
+                <div class="header-burger">
+                    <div class="header-burger-open-wrapper"  id="opened">
+                        <div class="header-burger-open"></div>
+                    </div>
+                    <div class="header-burger-close" id="closed"></div>
+                    <ul class="nav-burger-list" id="burger-list">
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                        <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
+                      </ul>
+                </div> 
                 <ul class="nav-list">
                   <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                   <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
@@ -34,6 +50,9 @@
             <div class="info">
                 <div class="info-detailed">
                     <h1 class="fullname">Vadim Hmys</h1>
+                    <div class="myphoto">
+                        <div class="wrapper-photo"></div>
+                    </div>
                     <div class="subtitle">
                         <div class="subtitle-inner">frontend developer</div>
                     </div>
@@ -86,17 +105,6 @@ function getDateAgo(date, days) {
                             </code>
                         </pre>
                     </section>
-                    <section class="section" id="projects">
-                        <h2 class="section-title">Work examples</h2>
-                        <ul class="projects-list">
-                            <li class="projects-item"> 
-                                <a class="projects-link" href="https://vadimhmys.github.io/MaryLosewa.github.io/" target="_blank">Mary Losewa</a>
-                            </li>
-                            <li class="projects-item">
-                                <a class="projects-link" href="https://vadimhmys.github.io/restaurant/" target="_blank">Restaurant</a>
-                            </li>
-                        </ul>
-                    </section>
                 </div>
                 <div class="info-short">
                     <div class="myphoto">
@@ -119,6 +127,17 @@ function getDateAgo(date, days) {
                             <li class="language-item">Belarusian (native)</li>
                             <li class="language-item">Russian (native)</li>
                             <li class="language-item">English (A1)</li>
+                        </ul>
+                    </section>
+                    <section class="section" id="projects">
+                        <h2 class="section-title">Work examples</h2>
+                        <ul class="projects-list">
+                            <li class="projects-item"> 
+                                <a class="projects-link" href="https://vadimhmys.github.io/MaryLosewa.github.io/" target="_blank">Mary Losewa</a>
+                            </li>
+                            <li class="projects-item">
+                                <a class="projects-link" href="https://vadimhmys.github.io/restaurant/" target="_blank">Restaurant</a>
+                            </li>
                         </ul>
                     </section>
                     <section class="section" id="contacts">
@@ -150,5 +169,6 @@ function getDateAgo(date, days) {
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
