@@ -14,3 +14,14 @@ I learn quickly, I am purposeful, hardworking and disciplined. I want to develop
 **Telecommunications engineer**
 
 Work experience: 2012 - 2022
+
+### SKILLS AND PROFICIENCY
+
+* HTML5, CSS3
+* SASS(SCSS)
+* BEM
+* JavaScript
+* Git
+* VS Code, Brackets
+* Adobe Photoshop, Figma
+* Gulp
