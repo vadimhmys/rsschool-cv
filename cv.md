@@ -25,3 +25,9 @@ Work experience: 2012 - 2022
 * VS Code, Brackets
 * Adobe Photoshop, Figma
 * Gulp
+
+### LANGUAGE
+
+1. Belarusian (native)
+2. Russian (native)
+3. English (A2-B1)
