@@ -44,3 +44,21 @@ Work experience: 2012 - 2022
 1. [Mary Losewa](https://vadimhmys.github.io/MaryLosewa.github.io/)
 2. [Portfolio](https://rolling-scopes-school.github.io/vadimhmys-JSFEPRESCHOOL/portfolio/)
 3. [Tetris](https://rolling-scopes-school.github.io/vadimhmys-JSFEPRESCHOOL/random-game/)
+
+### CODE EXAMPLE
+
+```
+Function.prototype.bind = function (ctx) {
+  let mainFunc = this;
+  let context = ctx;
+  
+  return  function () {
+      if(this === global) {
+        return mainFunc.call(context);
+      } else {
+        return mainFunc.call(this);
+      }
+      
+  }
+}
+```
