@@ -1,0 +1,16 @@
+# Vadim Hmys
+## FRONTEND DEVELOPER
+![my-photo](images/my_photo.jpg)
+
+### ABOUT MYSELF
+
+Good knowledge of HTML, CSS, preprocessors (SASS), JAVASCRIPT. Understanding of the BEM methodology, good command of the FIGMA and Adobe Photoshop graphics editors, I can work with the GIT version control system, use the GULP build system.
+
+
+I learn quickly, I am purposeful, hardworking and disciplined. I want to develop in the field of information technology, in particular in front-end development.
+
+### EDUCATION
+
+**Telecommunications engineer**
+
+Work experience: 2012 - 2022
