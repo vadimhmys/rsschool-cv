@@ -38,3 +38,9 @@ Work experience: 2012 - 2022
 * RS Schools Course [certificate](images/Certificate_rsschool.jpg)
 * Codewars [profile](https://www.codewars.com/users/vadimhmys)
 * JavaScript Manual on [learn.javascript.ru](https://learn.javascript.ru/)
+
+### WORK EXAMPLES
+
+1. [Mary Losewa](https://vadimhmys.github.io/MaryLosewa.github.io/)
+2. [Portfolio](https://rolling-scopes-school.github.io/vadimhmys-JSFEPRESCHOOL/portfolio/)
+3. [Tetris](https://rolling-scopes-school.github.io/vadimhmys-JSFEPRESCHOOL/random-game/)
