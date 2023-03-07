@@ -26,7 +26,7 @@ Work experience: 2012 - 2022
 * Adobe Photoshop, Figma
 * Gulp
 
-### LANGUAGE
+### LANGUAGES
 
 1. Belarusian (native)
 2. Russian (native)
