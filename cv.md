@@ -31,3 +31,10 @@ Work experience: 2012 - 2022
 1. Belarusian (native)
 2. Russian (native)
 3. English (A2-B1)
+
+### COURSES
+
+* Website development with HTML, CSS & JavaScript (IT-Academy) [certificate](images/Certificate.jpg)
+* RS Schools Course [certificate](images/Certificate_rsschool.jpg)
+* Codewars [profile](https://www.codewars.com/users/vadimhmys)
+* JavaScript Manual on [learn.javascript.ru](https://learn.javascript.ru/)
