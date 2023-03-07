@@ -62,3 +62,11 @@ Function.prototype.bind = function (ctx) {
   }
 }
 ```
+
+### CONTACT INFORMATION
+
+**Phone:** *+375(29)6658473* 
+
+**Email:** *vadimhmyz@gmail.com*
+
+**Discord:** *Vadim Hmys (@vadimhmys)*
